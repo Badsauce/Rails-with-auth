@@ -7,6 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <ul class="nav">
+    <li><%= link_to 'Home', root_path %></li>
+    <li><%= link_to 'About', about_path %></li>
+    <li><%= link_to 'Cat Pictures', cat_pictures_path %></li>
+  </ul>
+
+  <p><%= current_date_and_time %></p>
 
 <%= yield %>
 
