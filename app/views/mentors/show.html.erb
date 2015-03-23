@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @mentor.name %>
+</p>
+
+<p>
+  <strong>Organization:</strong>
+  <%= @mentor.organization %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @mentor.phone_number %>
+</p>
+
+<p>
+  <strong>Is remote:</strong>
+  <%= @mentor.is_remote %>
+</p>
+
+<p>
+  <strong>Tier:</strong>
+  <%= @mentor.tier %>
+</p>
+
+<p>
+  <strong>Twitter:</strong>
+  <%= @mentor.twitter %>
+</p>
+
+<%= link_to 'Edit', edit_mentor_path(@mentor) %> |
+<%= link_to 'Back', mentors_path %>
