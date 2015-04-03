@@ -1,5 +1,6 @@
 class MentorsController < ApplicationController
   before_action :set_mentor, only: [:show, :edit, :update, :destroy]
+  before_action :only_allow_signed_in_users, except: [:index, :show]
 
   # GET /mentors
   # GET /mentors.json
